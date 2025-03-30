@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject bomb;
     public GameObject enemy;
+    public GameObject enemyTargeted;
 
     public TextMeshProUGUI moneyDisplay;
 
