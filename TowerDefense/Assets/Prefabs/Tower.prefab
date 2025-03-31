@@ -103,6 +103,11 @@ MonoBehaviour:
   characterName: Main Tower
   health: 100
   displayHealth: {fileID: 7937946563833116843}
+  bulletTimer: 0
+  timerReset: 2
+  projectile: {fileID: 3359353771141810399, guid: 0d72fdd46d94dcd42a40ccff243c4273, type: 3}
+  enemyProx: 3
+  targetEnemy: {fileID: 0}
 --- !u!50 &500750270042285153
 Rigidbody2D:
   serializedVersion: 4

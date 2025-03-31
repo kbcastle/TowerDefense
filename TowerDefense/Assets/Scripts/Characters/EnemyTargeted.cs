@@ -17,7 +17,7 @@ public class EnemyTargeted : Enemy
     void Update()
     {
         manager = FindObjectOfType<GameManager>();
-        thisObject.transform.position += VectorToPlayer() * speed;
+        thisObject.transform.position += VectorToTower() * speed;
         DisplayHealth();
         if (health <= 0)
         {
@@ -26,7 +26,7 @@ public class EnemyTargeted : Enemy
         }
     }
 
-    Vector3 VectorToPlayer() //function to get the direction to the tower from the current enemy
+    Vector3 VectorToTower() //function to get the direction to the tower from the current enemy
     {
         Vector3 targetDir;
         targetDir = targetTower.transform.position - transform.position; //subtracting the position of the enemy from the posititon of the tower to get the vector for the direction between them
